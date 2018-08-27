@@ -1,0 +1,19 @@
+routes:
+
+collections:
+  /:
+    permalink: /post/{slug}/
+    rss: true
+    filter: 'tag:-project'
+    template:
+      - home
+  /portfolio/:
+    permalink: /portfolio/project/{slug}/
+    rss: false
+    filter: 'tag: project'
+    template: 
+      - portfolio
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
